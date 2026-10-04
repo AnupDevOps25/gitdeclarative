@@ -6,15 +6,15 @@ pipeline{
                 echo "This is the build stage Anup"
             }
         }
-        stage('Test'){
-            steps{
-                echo "This is the test stage"
+    }
+    stages{
+        stage('Test') {
+            steps {
+                echo 'Testing...'
             }
         }
-          stage('Deploy'){
-            steps{
-                echo "This is the deploy stage"
-            }
-        }
+    }
+    stages{
+       
     }
 }
